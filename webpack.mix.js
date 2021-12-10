@@ -13,5 +13,14 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
-        //
+        // Uncomment when using Tailwind CSS
+        // require('postcss-import'),
+        // require('tailwindcss'),
+        // require('autoprefixer'),
     ]);
+
+if (mix.inProduction()) {
+    mix.version();
+} else {
+    mix.sourceMaps();
+}
