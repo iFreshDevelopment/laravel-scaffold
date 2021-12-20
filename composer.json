@@ -9,7 +9,7 @@
         "bugsnag/bugsnag-laravel": "^2.22",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "ifresh/fakkel-laravel": "^0.0.3",
+        "ifresh/fakkel-laravel": "^1.0.0",
         "inter-mediator/fmdataapi": "^23.0",
         "laravel/framework": "^8.65",
         "laravel/horizon": "^5.7",
