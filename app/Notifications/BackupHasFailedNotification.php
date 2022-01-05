@@ -7,9 +7,9 @@ use Spatie\Backup\Notifications\Notifications\BackupHasFailedNotification as Spa
 
 class BackupHasFailedNotification extends SpatieBackupHasFailedNotification
 {
-    protected $payload = [];
+    protected array $payload = [];
 
-    public function toFakkel()
+    public function toFakkel(): Message
     {
         $this->payload = [
             'application' => $this->applicationName(),

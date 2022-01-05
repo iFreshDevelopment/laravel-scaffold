@@ -7,9 +7,9 @@ use Spatie\Backup\Notifications\Notifications\BackupWasSuccessfulNotification as
 
 class BackupWasSuccessfulNotification extends SpatieBackupWasSuccessfulNotification
 {
-    protected $payload = [];
+    protected array $payload = [];
 
-    public function toFakkel()
+    public function toFakkel(): Message
     {
         $this->payload = [
             'application' => $this->applicationName(),

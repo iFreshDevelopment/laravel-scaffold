@@ -9,7 +9,9 @@ $config = new PhpCsFixer\Config();
 return $config
     ->setRules([
         'array_indentation' => true,
-        'array_syntax' => true,
+        'array_syntax' => [
+            'syntax' => 'short',
+        ],
         'binary_operator_spaces' => true,
         'blank_line_after_namespace' => true,
         'blank_line_after_opening_tag' => true,
@@ -27,6 +29,7 @@ return $config
         'elseif' => true,
         'encoding' => true,
         'full_opening_tag' => true,
+        'fully_qualified_strict_types' => true,
         'function_declaration' => true,
         'function_typehint_space' => true,
         'heredoc_to_nowdoc' => true,
@@ -116,6 +119,8 @@ return $config
     ])
     ->setFinder(
         PhpCsFixer\Finder::create()
-            ->exclude('vendor')
-            ->in(__DIR__)
+            ->in([
+                __DIR__ . '/app',
+                __DIR__ . '/bootstrap'
+            ])
     );
