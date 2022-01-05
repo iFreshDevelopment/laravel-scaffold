@@ -231,7 +231,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+    ],
 
+
+    'default_user' => [
+        'name' => env('DEFAULT_USER_NAME', 'Demo User'),
+        'email' => env('DEFAULT_USER_EMAIL', 'email@example.net'),
+        'password' => env('DEFAULT_USER_PASSWORD', 'password'),
     ],
 
 ];
