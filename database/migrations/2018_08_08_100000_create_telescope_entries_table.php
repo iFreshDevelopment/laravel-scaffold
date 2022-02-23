@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * The database schema.
      *
@@ -65,9 +64,9 @@ return new class extends Migration
             $table->index('tag');
 
             $table->foreign('entry_uuid')
-                  ->references('uuid')
-                  ->on('telescope_entries')
-                  ->onDelete('cascade');
+                ->references('uuid')
+                ->on('telescope_entries')
+                ->onDelete('cascade');
         });
 
         $this->schema->create('telescope_monitoring', function (Blueprint $table) {

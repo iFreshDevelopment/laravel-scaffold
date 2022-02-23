@@ -108,4 +108,19 @@ return [
 
     'password_timeout' => 10800,
 
+    /*
+    |--------------------------------------------------------------------------
+    | Default user credentials
+    |--------------------------------------------------------------------------
+    |
+    | Here you may define the credentials for a default user which will be
+    | generated when the database is seeded.
+    |
+    */
+
+    'default_user' => [
+        'name' => env('DEFAULT_USER_NAME'),
+        'email' => env('DEFAULT_USER_EMAIL'),
+        'password' => env('DEFAULT_USER_PASSWORD'),
+    ],
 ];

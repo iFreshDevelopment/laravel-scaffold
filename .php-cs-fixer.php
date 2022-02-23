@@ -71,6 +71,7 @@ return $config
         'no_trailing_whitespace_in_comment' => true,
         'no_unneeded_control_parentheses' => true,
         'no_unneeded_curly_braces' => true,
+        'no_unneeded_import_alias' => true,
         'no_unset_cast' => true,
         'no_unused_imports' => true,
         'no_useless_return' => true,
@@ -78,6 +79,7 @@ return $config
         'normalize_index_brace' => true,
         'not_operator_with_successor_space' => true,
         'object_operator_without_whitespace' => true,
+        'operator_linebreak' => true,
         'ordered_imports' => true,
         'phpdoc_align' => true,
         'phpdoc_indent' => true,
@@ -121,6 +123,8 @@ return $config
         PhpCsFixer\Finder::create()
             ->in([
                 __DIR__ . '/app',
-                __DIR__ . '/bootstrap'
+                __DIR__ . '/database',
+                __DIR__ . '/routes',
+                __DIR__ . '/tests',
             ])
     );
