@@ -10,7 +10,7 @@
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
         "ifresh/fakkel-laravel": "^1.0.0",
-        "inter-mediator/fmdataapi": "^23.0",
+        "inter-mediator/fmdataapi": "^24.0",
         "laravel/framework": "^9.2",
         "laravel/horizon": "^5.7",
         "laravel/sanctum": "^2.14",

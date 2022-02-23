@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de7a6acf88389780e91447df97308faa",
+    "content-hash": "cc75947cf5b96af4fc886c7d7522191a",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -1417,16 +1417,16 @@
         },
         {
             "name": "inter-mediator/fmdataapi",
-            "version": "23",
+            "version": "24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/msyk/FMDataAPI.git",
-                "reference": "c4dc6caa8251c9261dc47f670527bcc097af4a67"
+                "reference": "6264f03a2e0bb0881d0a40523bfd52078cb0001a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/msyk/FMDataAPI/zipball/c4dc6caa8251c9261dc47f670527bcc097af4a67",
-                "reference": "c4dc6caa8251c9261dc47f670527bcc097af4a67",
+                "url": "https://api.github.com/repos/msyk/FMDataAPI/zipball/6264f03a2e0bb0881d0a40523bfd52078cb0001a",
+                "reference": "6264f03a2e0bb0881d0a40523bfd52078cb0001a",
                 "shasum": ""
             },
             "require": {
@@ -11214,7 +11214,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.0"
+        "php": "^8.0.2"
     },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
