@@ -16,6 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        if (! config('auth.default_user.email')) {
+            return;
+        }
+
         User::factory()->create([
             'name' => config('auth.default_user.name'),
             'email' => config('auth.default_user.email'),

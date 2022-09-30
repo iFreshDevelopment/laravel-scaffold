@@ -5,37 +5,37 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.0.2",
-        "bugsnag/bugsnag-laravel": "^2.22",
-        "fruitcake/laravel-cors": "^2.0.5",
-        "guzzlehttp/guzzle": "^7.2",
+        "php": "^8.1.0",
+        "bugsnag/bugsnag-laravel": "^2.24",
+        "fruitcake/laravel-cors": "^2.2.0",
+        "guzzlehttp/guzzle": "^7.5",
         "ifresh/fakkel-laravel": "^1.0.0",
+        "inertiajs/inertia-laravel": "^0.6.3",
         "inter-mediator/fmdataapi": "^26.0",
-        "laravel/framework": "^9.2",
-        "laravel/horizon": "^5.7",
-        "league/flysystem-aws-s3-v3": "^3.0.6",
+        "laravel/framework": "^9.32",
+        "laravel/horizon": "^5.10",
+        "laravel/sanctum": "^2.8",
+        "laravel/tinker": "^2.7",
+        "league/flysystem-aws-s3-v3": "^3.5",
+        "pestphp/pest": "^1.16",
+        "pestphp/pest-plugin-laravel": "^1.1",
         "predis/predis": "^1.1",
-        "spatie/laravel-backup": "^8.0",
-        "laravel/sanctum": "^2.14.1",
-        "laravel/framework": "^9.19",
-        "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
+        "spatie/laravel-backup": "^8.1",
+        "tightenco/ziggy": "^1.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.6",
+        "barryvdh/laravel-debugbar": "^3.7",
         "barryvdh/laravel-ide-helper": "^2.12",
-        "friendsofphp/php-cs-fixer": "^3.6",
-        "laravel/breeze": "^1.6",
-        "laravel/sail": "^1.12",
-        "laravel/telescope": "^4.6",
-        "fakerphp/faker": "^1.9.1",
-        "laravel/pint": "^1.0",
-        "laravel/sail": "^1.0.1",
-        "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
+        "fakerphp/faker": "^1.20.0",
+        "laravel/breeze": "^1.14",
+        "laravel/pint": "^1.2",
+        "laravel/sail": "^1.16",
+        "laravel/telescope": "^4.9",
+        "mockery/mockery": "^1.5",
+        "nunomaduro/collision": "^6.3",
         "nunomaduro/larastan": "^1.0",
         "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0"
+        "spatie/laravel-ignition": "^1.5"
     },
     "autoload": {
         "psr-4": {
@@ -61,7 +61,8 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
+            "@php artisan key:generate --ansi",
+            "@php artisan app:initialize"
         ]
     },
     "extra": {
@@ -76,7 +77,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "composer/package-versions-deprecated": true
+            "composer/package-versions-deprecated": true,
             "pestphp/pest-plugin": true
         }
     },
