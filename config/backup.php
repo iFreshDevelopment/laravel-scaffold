@@ -155,7 +155,7 @@ return [
     'notifications' => [
 
         'notifications' => [
-            BackupHasFailedNotification::class => [Fakkel::class,'mail'],
+            BackupHasFailedNotification::class => [Fakkel::class, 'mail'],
             \Spatie\Backup\Notifications\Notifications\UnhealthyBackupWasFoundNotification::class => ['mail'],
             \Spatie\Backup\Notifications\Notifications\CleanupHasFailedNotification::class => ['mail'],
             BackupWasSuccessfulNotification::class => [Fakkel::class, 'mail'],
